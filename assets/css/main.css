@@ -951,7 +951,7 @@ input, select, textarea {
 			color: #ffffff;
 			font-size: 0.9em;
 			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0 0.75em 0.75em 0;
 			text-align: left;
 		}
 
