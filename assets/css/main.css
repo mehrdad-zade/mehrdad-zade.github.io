@@ -1233,6 +1233,12 @@ input, select, textarea {
 				padding: 2rem 1rem;
 			}
 
+			.multi-column {
+				columns: 1;
+				-webkit-columns: 1;
+				-moz-columns: 1;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1328,12 +1334,12 @@ input, select, textarea {
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 40rem;
+				max-height: 100rem;
 				overflow: hidden;
 			}
-				/* buttom of the inner area */
+
 				#header .content .inner > :last-child {
-					margin-bottom: 0.1 rem; 
+					margin-bottom: 0;
 				}
 
 			#header .content p {
