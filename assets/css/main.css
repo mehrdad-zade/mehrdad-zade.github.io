@@ -1669,3 +1669,9 @@ input, select, textarea {
 .rounded_img {
 	border-radius: 50%;
 }
+
+.multi-column {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
