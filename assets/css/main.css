@@ -1331,9 +1331,9 @@ input, select, textarea {
 				max-height: 40rem;
 				overflow: hidden;
 			}
-
+				/* buttom of the inner area */
 				#header .content .inner > :last-child {
-					margin-bottom: 0;
+					margin-bottom: 0.1 rem; 
 				}
 
 			#header .content p {
