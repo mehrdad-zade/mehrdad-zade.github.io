@@ -1335,7 +1335,7 @@ input, select, textarea {
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 100rem;
+				/* max-height: 100rem; */
 				overflow: hidden;
 			}
 
