@@ -199,6 +199,13 @@ html, body {
   margin: 0;
 }
 
+.detail {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.3;
+  margin: 0.5rem 0 0 0rem;
+}
+
 .summary-card ul {
   margin: 0.25rem 0 0 1.1rem;
   padding: 0;
