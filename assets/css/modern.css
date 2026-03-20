@@ -64,9 +64,41 @@ html, body {
 .profile-image-container {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centers horizontally */
-  justify-content: center; /* centers vertically */
-  height: 100%;          /* make sure parent has a set height */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.profile-image-wrapper {
+  position: relative;
+  display: block;
+  line-height: 0;
+  border-radius: 50%;
+}
+
+.profile-image-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(102, 126, 234, 0.88);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+
+.profile-image-wrapper:hover .profile-image-overlay {
+  opacity: 1;
+}
+
+.profile-image-wrapper:hover .profile-image {
+  filter: brightness(0.55);
 }
 
 .profile-image {
