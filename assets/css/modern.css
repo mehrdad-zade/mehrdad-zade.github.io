@@ -773,3 +773,126 @@ html, body {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
+
+/* ===== Viewport Fit: Continuous scaling via clamp() + dvh — fits any screen ===== */
+/* dvh = "dynamic viewport height" (accounts for browser chrome on all devices).    */
+/* clamp(min, preferred, max): preferred uses dvh so it scales with screen height.   */
+@media (min-width: 737px) {
+  /* Store connector-line gap as a CSS variable so top/height stay in sync */
+  #header {
+    --gap: clamp(0.5rem, 1.8dvh, 3rem);
+  }
+
+  /* Wrapper = exactly one viewport tall — landing page never requires scrolling */
+  #wrapper {
+    height: 100dvh;
+    min-height: unset;
+    padding: clamp(0.5rem, 2dvh, 4rem) clamp(1rem, 2vw, 4rem);
+    box-sizing: border-box;
+  }
+
+  /* Connector lines between logo / content / nav */
+  #header > * {
+    margin-top: var(--gap);
+  }
+  #header > *:before {
+    top: calc(-1 * var(--gap) - 1px);
+    height: calc(var(--gap) + 1px);
+  }
+
+  /* Profile avatar — grows/shrinks with viewport height */
+  #header .logo {
+    width: clamp(3rem, 7dvh, 7.5rem);
+    height: clamp(3rem, 7dvh, 7.5rem);
+    line-height: clamp(3rem, 7dvh, 7.5rem);
+  }
+  .profile-image {
+    width: clamp(50px, 8dvh, 140px);
+    height: clamp(50px, 8dvh, 140px);
+  }
+
+  /* Content inner padding */
+  #header .content .inner {
+    padding: clamp(0.5rem, 1.5dvh, 2.5rem) clamp(1rem, 2vw, 4rem);
+  }
+
+  /* Typography */
+  .name-title {
+    font-size: clamp(1.4rem, 3.5dvh, 3.5rem);
+    margin-bottom: clamp(0.1rem, 0.5dvh, 0.75rem);
+  }
+  .role-subtitle {
+    font-size: clamp(0.75rem, 1.5dvh, 1.6rem);
+    margin: clamp(0.05rem, 0.3dvh, 0.4rem) 0;
+  }
+
+  /* Summary grid: 2 columns on tablet/narrow, keeps height manageable */
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.35rem, 1dvh, 2rem);
+    margin-top: clamp(0.35rem, 1dvh, 2rem);
+  }
+  .summary-card {
+    padding: clamp(0.35rem, 1dvh, 1.75rem) clamp(0.5rem, 1.5vw, 2.25rem);
+  }
+  .summary-icon {
+    font-size: clamp(0.85rem, 2dvh, 2.25rem);
+    margin-bottom: clamp(0.1rem, 0.5dvh, 0.85rem);
+  }
+  .summary-card p,
+  .summary-card ul li {
+    font-size: clamp(0.65rem, 1.25dvh, 1.15rem);
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  /* Contact panel: scale all spacing with viewport height so it never scrolls */
+  #contact {
+    padding-top: clamp(2rem, 5dvh, 4.5rem);
+    padding-bottom: clamp(0.5rem, 1.5dvh, 1.5rem);
+  }
+  #contact .project-grid {
+    gap: clamp(0.4rem, 1.2dvh, 2rem);
+    margin-top: clamp(0.4rem, 1.2dvh, 2rem);
+  }
+  #contact .project-card {
+    padding: clamp(0.5rem, 1.5dvh, 2rem);
+  }
+  #contact .project-title {
+    font-size: clamp(0.8rem, 1.6dvh, 1.25rem);
+    margin-bottom: clamp(0.2rem, 0.6dvh, 1rem);
+  }
+  #contact .tech-title {
+    font-size: clamp(0.7rem, 1.3dvh, 1rem);
+    margin: 0;
+  }
+  #contact [style*="padding: 1.5rem"] {
+    padding: clamp(0.5rem, 1.5dvh, 1.5rem) !important;
+  }
+  #contact [style*="margin-top: 0.5rem"] {
+    margin-top: clamp(0.25rem, 0.8dvh, 0.5rem) !important;
+  }
+  #contact [style*="padding: 1.5rem"] h3 {
+    font-size: clamp(0.85rem, 1.6dvh, 1.2rem);
+    margin-bottom: clamp(0.15rem, 0.5dvh, 0.5rem);
+  }
+  #contact [style*="padding: 1.5rem"] p {
+    font-size: clamp(0.7rem, 1.2dvh, 1rem);
+  }
+  #contact .social-links {
+    margin-top: clamp(0.3rem, 1dvh, 1rem);
+    gap: clamp(0.5rem, 1dvh, 1rem);
+  }
+  #contact .social-link {
+    width: clamp(32px, 5dvh, 50px);
+    height: clamp(32px, 5dvh, 50px);
+    font-size: clamp(0.75rem, 1.4dvh, 1.1rem);
+  }
+}
+
+/* 3-column summary grid on wider screens — fewer rows = less height needed */
+@media (min-width: 1024px) {
+  .summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
