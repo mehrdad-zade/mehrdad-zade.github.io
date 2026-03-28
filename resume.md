@@ -2,7 +2,7 @@
 
 **Email:** Zade.Mehrdad@gmail.com  
 **Location:** Toronto, Ontario | Canadian Citizen  
-**Links:** [LinkedIn](https://www.linkedin.com/in/zade) | [GitHub](https://github.com/mehrdad-zade) | [Website](https://mehrdad-zade.github.io/)
+**Links:** [LinkedIn](https://www.linkedin.com/in/zade) | [GitHub](https://github.com/mehrdad-zade) | [Website](https://mehrdad-zade.github.io/) | [Gist Reader — App Store](https://apps.apple.com/ca/app/gist-reader/id6761196988)
 
 ---
 
