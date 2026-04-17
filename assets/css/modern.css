@@ -675,6 +675,28 @@ html, body {
     width: 100%;
     box-sizing: border-box;
   }
+  
+  /* Contact section for very small screens */
+  #contact .social-links a {
+    font-size: 0.7rem !important;
+    padding: 0.35rem 0.6rem !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  #contact .social-links a i {
+    margin-bottom: 0.2rem;
+  }
+  
+  #contact [style*="padding: 1.5rem"] {
+    padding: 1rem !important;
+  }
+  
+  #contact .project-card {
+    padding: 1rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -713,6 +735,26 @@ html, body {
   .experience-item {
     margin-left: 1rem;
     padding: 1.5rem;
+  }
+  
+  /* Contact section mobile fixes */
+  #contact .social-links {
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+    justify-content: center !important;
+  }
+  
+  #contact .social-links a {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem !important;
+    gap: 0.3rem !important;
+    flex: 0 1 auto !important;
+    max-width: calc(50% - 0.4rem) !important;
+  }
+  
+  #contact .social-links img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 
