@@ -699,7 +699,13 @@
       </div>
 
       <div class="edu-card cert-card reveal">
-        <h3 class="edu-title"><span>📜</span> Certifications</h3>
+        <h3 class="edu-title">
+          <span>📜</span> Certifications
+          <button class="cert-toggle" aria-expanded="false">
+            <span class="toggle-label">Show all</span>
+            <i class="fas fa-chevron-down cert-chevron"></i>
+          </button>
+        </h3>
         <ul class="edu-list">
           <li>GitHub Copilot for Project Management — Microsoft (Issued Aug 2025) — Credential ID: GFC9PA4RXDBH</li>
           <li>Microsoft Azure Machine Learning — Microsoft (Issued Aug 2025) — Credential ID: BCOUIGDVX7IA</li>
@@ -709,39 +715,44 @@
           <li>Agentic AI and AI Agents: A Primer for Leaders — Vanderbilt University (Issued Feb 2025) — Credential ID: ABW5ZDA6NJPQ</li>
           <li>Change Management for Generative AI — Vanderbilt University (Issued Feb 2025) — Credential ID: RJFE0K9YDFNY</li>
           <li>GenAI for Executives &amp; Business Leaders: An Introduction — IBM (Issued Feb 2025) — Credential ID: 78OFXG3W8K7E</li>
-          <li>Foundational C# with Microsoft — freeCodeCamp (Issued Oct 2023)</li>
-          <li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization — DeepLearning.AI (Issued Feb 2021) — Credential ID: 9V6DHNBTKDLG</li>
-          <li>Neural Networks and Deep Learning — DeepLearning.AI (Issued Feb 2021) — Credential ID: W9XPC69CUB27</li>
-          <li>Structuring Machine Learning Projects — DeepLearning.AI (Issued Feb 2021) — Credential ID: NBNWVSNGJ9X9</li>
-          <li>Cloud Architecture: Core Concepts — Lynda.com (Issued Aug 2017)</li>
-          <li>DevOps Foundations — Lynda.com (Issued Aug 2017)</li>
-          <li>Six Sigma Foundations — Lynda.com (Issued Aug 2017)</li>
-          <li>Android Oreo Developer — Udemy</li>
-          <li>Microsoft Azure AZ‑900 — Microsoft</li>
-          <li>Convolutional Neural Networks — Coursera</li>
-          <li>Data Science and ML Bootcamp — Udemy</li>
-          <li>Development using Spring Boot — Udemy</li>
-          <li>Google Cloud Platform Fundamentals: Core Infrastructure — Coursera</li>
-          <li>Machine Learning — Andrew Ng (Stanford/Coursera)</li>
-          <li>OOP in Java — University of Helsinki</li>
-          <li>Python and Django Full Stack Web Developer Bootcamp — Udemy</li>
-          <li>Sequence Models — Coursera</li>
-          <li>TCS DevOps Hackathon — Honored Achiever</li>
-          <li>TCS Machine Learning Hackathon</li>
-          <li>The Web Developer Bootcamp — Udemy</li>
-          <li>iOS 12 &amp; Swift — Complete iOS App Development Bootcamp — Udemy</li>
-          <li>Machine Learning A‑Z: Hands‑on Python &amp; R in Data Science — Udemy</li>
-          <li>The Ultimate Hands‑On Hadoop — Udemy</li>
-          <li>React — The Complete Guide (Hooks, Router, Redux) — Udemy</li>
-          <li>e‑commerce app with .NET Core and Angular — Udemy</li>
-          <li>Blockchain &amp; Cryptocurrency | Full‑Stack — Udemy</li>
-          <li>MERN Stack Front To Back — Udemy</li>
-          <li>End to End Project Development Using Spring Boot — Udemy</li>
-          <li>Salesforce Integration Course: SOAP API — Udemy</li>
-          <li>Complete 2020 Data Science &amp; Machine Learning Bootcamp — Udemy</li>
-          <li>Advanced ASP.NET Core 3.1 Razor Pages — Udemy</li>
-          <li>Full Stack: Angular and Java Spring Boot — Udemy</li>
         </ul>
+        <hr class="cert-divider" />
+        <div class="cert-more" aria-hidden="true">
+          <ul class="edu-list">
+            <li>Foundational C# with Microsoft — freeCodeCamp (Issued Oct 2023)</li>
+            <li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization — DeepLearning.AI (Issued Feb 2021) — Credential ID: 9V6DHNBTKDLG</li>
+            <li>Neural Networks and Deep Learning — DeepLearning.AI (Issued Feb 2021) — Credential ID: W9XPC69CUB27</li>
+            <li>Structuring Machine Learning Projects — DeepLearning.AI (Issued Feb 2021) — Credential ID: NBNWVSNGJ9X9</li>
+            <li>Cloud Architecture: Core Concepts — Lynda.com (Issued Aug 2017)</li>
+            <li>DevOps Foundations — Lynda.com (Issued Aug 2017)</li>
+            <li>Six Sigma Foundations — Lynda.com (Issued Aug 2017)</li>
+            <li>Android Oreo Developer — Udemy</li>
+            <li>Microsoft Azure AZ‑900 — Microsoft</li>
+            <li>Convolutional Neural Networks — Coursera</li>
+            <li>Data Science and ML Bootcamp — Udemy</li>
+            <li>Development using Spring Boot — Udemy</li>
+            <li>Google Cloud Platform Fundamentals: Core Infrastructure — Coursera</li>
+            <li>Machine Learning — Andrew Ng (Stanford/Coursera)</li>
+            <li>OOP in Java — University of Helsinki</li>
+            <li>Python and Django Full Stack Web Developer Bootcamp — Udemy</li>
+            <li>Sequence Models — Coursera</li>
+            <li>TCS DevOps Hackathon — Honored Achiever</li>
+            <li>TCS Machine Learning Hackathon</li>
+            <li>The Web Developer Bootcamp — Udemy</li>
+            <li>iOS 12 &amp; Swift — Complete iOS App Development Bootcamp — Udemy</li>
+            <li>Machine Learning A‑Z: Hands‑on Python &amp; R in Data Science — Udemy</li>
+            <li>The Ultimate Hands‑On Hadoop — Udemy</li>
+            <li>React — The Complete Guide (Hooks, Router, Redux) — Udemy</li>
+            <li>e‑commerce app with .NET Core and Angular — Udemy</li>
+            <li>Blockchain &amp; Cryptocurrency | Full‑Stack — Udemy</li>
+            <li>MERN Stack Front To Back — Udemy</li>
+            <li>End to End Project Development Using Spring Boot — Udemy</li>
+            <li>Salesforce Integration Course: SOAP API — Udemy</li>
+            <li>Complete 2020 Data Science &amp; Machine Learning Bootcamp — Udemy</li>
+            <li>Advanced ASP.NET Core 3.1 Razor Pages — Udemy</li>
+            <li>Full Stack: Angular and Java Spring Boot — Udemy</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -896,21 +907,21 @@
     </div>
 
     <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="c-icon">📧</div>
-        <h3>Email</h3>
-        <p>Zade.Mehrdad@Gmail.com</p>
-      </div>
+      <div class="contact-info-row">
+        <div class="contact-info reveal">
+          <h3>Email</h3>
+          <p>Zade.Mehrdad@Gmail.com</p>
+        </div>
 
-      <div class="contact-info reveal">
-        <div class="c-icon">📍</div>
-        <h3>Location</h3>
-        <p>Toronto, Ontario, Canada</p>
+        <div class="contact-info reveal">
+          <h3>Location</h3>
+          <p>Toronto, Ontario, Canada</p>
+        </div>
       </div>
 
       <div class="contact-cta reveal">
         <h3>Ready to collaborate?</h3>
-        <p>Let's discuss how I can help drive your next project to success.</p>
+        <p>Let’s discuss how I can align your technical strategy with your business goals.</p>
         <div class="cta-buttons">
           <a href="Resume%20-%20Mehrdad%20Alemzadeh.pdf" download="Resume - Mehrdad Alemzadeh.pdf" class="btn btn-primary">
             <i class="fas fa-file-pdf"></i> Resume

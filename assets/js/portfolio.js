@@ -62,6 +62,19 @@
   }, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
   reveals.forEach(function (el) { io.observe(el); });
 
+  /* ── Certifications accordion ── */
+  var certToggle = document.querySelector('.cert-toggle');
+  var certMore   = document.querySelector('.cert-more');
+  if (certToggle && certMore) {
+    certToggle.addEventListener('click', function () {
+      var expanded = certToggle.getAttribute('aria-expanded') === 'true';
+      certToggle.setAttribute('aria-expanded', String(!expanded));
+      certMore.classList.toggle('open', !expanded);
+      certMore.setAttribute('aria-hidden', String(expanded));
+      certToggle.querySelector('.toggle-label').textContent = expanded ? 'Show all' : 'Collapse';
+    });
+  }
+
   /* ── Initial state ── */
   updateNav();
   updateActive();
