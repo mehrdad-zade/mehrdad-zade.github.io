@@ -1,0 +1,133 @@
+{
+    "project_identity": {
+        "name": "mehrdad-zade.github.io",
+        "root_directory": "./",
+        "version": "0.1.0",
+        "environment": "production"
+    },
+
+    "llm_orchestration": {
+        "tiers": {
+            "high": {
+                "model": "claude-opus-4-7",
+                "context_caching": true,
+                "max_output_tokens": 8192,
+                "intent": "Architecture, security-critical code, and complex migrations"
+            },
+            "medium": {
+                "model": "claude-sonnet-4-6",
+                "context_caching": true,
+                "max_output_tokens": 4096,
+                "intent": "Feature implementation, integration work, and testing"
+            },
+            "low": {
+                "model": "claude-haiku-4-5-20251001",
+                "context_caching": true,
+                "max_output_tokens": 1024,
+                "intent": "Boilerplate, linting, documentation, and simple scripts"
+            }
+        },
+        "default_tier": "medium",
+        "global_governance": {
+            "temperature": 0.3
+        }
+    },
+
+    "stack_specification": {
+        "backends": {
+            "primary": {
+                "id": "primary-api",
+                "language": "n/a",
+                "framework": "n/a",
+                "directory": "./",
+                "enabled": false
+            },
+            "secondary": {
+                "id": "worker-service",
+                "language": "n/a",
+                "framework": "n/a",
+                "directory": "./",
+                "enabled": false
+            }
+        },
+        "frontend": {
+            "framework": "html-css-js",
+            "styling": "sass",
+            "directory": "./"
+        },
+        "databases": {
+            "sql": "n/a",
+            "no_sql": "n/a",
+            "orm": "n/a"
+        }
+    },
+
+    "infrastructure": {
+        "cloud_provider": "github-pages",
+        "core_services": [
+            "github-pages"
+        ],
+        "third_party_services": [
+            "admob",
+            "app-store"
+        ],
+        "deployment_strategy": "git-push",
+        "iac_directory": "./infra"
+    },
+
+    "agentic_capabilities": {
+        "agents_path": "./.claude/agents",
+        "commands_path": "./.claude/commands",
+        "memories_path": "./.claude/memories",
+        "rules_path": "./.claude/rules",
+        "active_agents": [
+            {
+                "id": "architect-agent",
+                "default_model_tier": "high",
+                "description": "System-wide orchestration and structural planning"
+            },
+            {
+                "id": "frontend-expert",
+                "default_model_tier": "medium",
+                "description": "UI/UX implementation and frontend logic"
+            },
+            {
+                "id": "backend-specialist",
+                "default_model_tier": "medium",
+                "description": "API development and business logic"
+            },
+            {
+                "id": "db-architect",
+                "default_model_tier": "medium",
+                "description": "Schema management and query optimization"
+            },
+            {
+                "id": "devops-specialist",
+                "default_model_tier": "medium",
+                "description": "Infrastructure scripts and deployment execution"
+            },
+            {
+                "id": "security-auditor",
+                "default_model_tier": "high",
+                "description": "Critical vulnerability scanning and compliance enforcement"
+            }
+        ],
+        "rules_enforcement": "strict"
+    },
+
+    "sprint_tracking": {
+        "current_sprint": 1,
+        "sprint_directory": "Documents/Sprints",
+        "auto_log": true
+    },
+
+    "behavioral_settings": {
+        "indentation": "2-spaces",
+        "code_naming_convention": "camelCase",
+        "file_naming_convention": "kebab-case",
+        "component_naming_convention": "PascalCase",
+        "constants_naming_convention": "UPPER_SNAKE_CASE",
+        "database_column_convention": "snake_case",
+        "security_checks_enabled": true
+    }
+}
