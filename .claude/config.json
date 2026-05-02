@@ -116,7 +116,7 @@
     },
 
     "sprint_tracking": {
-        "current_sprint": 1,
+        "current_sprint": 2,
         "sprint_directory": "Documents/Sprints",
         "auto_log": true
     },
