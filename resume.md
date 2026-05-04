@@ -10,6 +10,8 @@
 
 Senior Application Solution Architect and high-performing Full Stack Software Engineer with a proven record of leading and delivering impactful solutions for mission-critical initiatives across multiple teams and departments. Skilled in cloud services and end-to-end SDLC ownership, with expertise in leveraging AI-assisted development to accelerate software delivery. Experienced in setting technical direction, mentoring engineers, and driving cross-functional collaboration at scale. Expert problem-solving skills and consistent ability to deliver cost-effective, high-quality outcomes.
 
+Currently serving as a multi-faceted lead at Aletha Corp., navigating complex client engagements as a Solution Architect and Tech Lead. Complementing corporate expertise with an entrepreneurial background as a founder of multiple live software solutions, demonstrating a unique blend of technical rigor and product vision.
+
 ---
 
 ## Skills & Core Competencies
