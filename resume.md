@@ -2,7 +2,7 @@
 
 **Email:** Zade.Mehrdad@gmail.com  
 **Location:** Toronto, Ontario | Canadian Citizen  
-**Links:** [LinkedIn](https://www.linkedin.com/in/zade) | [GitHub](https://github.com/mehrdad-zade) | [Website](https://mehrdad-zade.github.io/) | [Gist Reader — App Store](https://apps.apple.com/ca/app/gist-reader/id6761196988)
+**Links:** [LinkedIn](https://www.linkedin.com/in/zade) | [GitHub](https://github.com/mehrdad-zade) | [Website](https://mehrdad-zade.github.io/)
 
 ---
 
@@ -20,7 +20,7 @@ Senior Application Solution Architect and high-performing Full Stack Software En
 | **Leadership & Delivery** | Onsite/offshore team management (20+ engineers) · Hiring & technical interviewing · Developer mentoring & onboarding · Delivery planning & capacity management · SDLC ownership · ITIL release management |
 | **Solution Architecture** | Distributed systems design · High availability & disaster recovery · Microservices & API design · Event-driven architecture · Enterprise integration (REST / SOAP / MQ) · Fraud detection & FinTech systems |
 | **AI & Data Engineering** | RAG / LLM integration · Prompt engineering · Agentic workflows · ML pipelines · Databricks · Azure OpenAI · Form Recognizer |
-| **Languages & Frameworks** | Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, React, Angular, iOS, Android, JavaScript, Chrome Extensions, Bootstrap, HTML, CSS |
+| **Languages & Frameworks** | Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS |
 | **LLMs & Agentic AI** | Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock |
 | **Cloud & Infrastructure** | Azure, AWS, GCP · Azure OpenShift · Kafka · Docker · Kubernetes · Azure Bicep · Ansible |
 | **DevOps & CI/CD** | GitHub Actions, Azure DevOps Pipelines, Jenkins, Makefile |
@@ -52,31 +52,76 @@ Senior Application Solution Architect and high-performing Full Stack Software En
 
 ## Work Experience
 
+### [Maester.Work](https://maester.work) | *Founder & Full-Stack Engineer*
+**Apr 2026 – Present**
+
+Designed, built, and deployed a production-grade **AI-powered hiring intelligence platform** as a solo full-stack project — covering product design, architecture, backend, frontend, infrastructure, and billing in a single continuous build.
+
+**Platform Overview**
+
+A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptions for instant AI-scored fit analysis; job seekers build profiles and let the AI autonomously discover, score, and track matched opportunities across company career pages.
+
+**Key Capabilities**
+- **AI Resume Analysis** — Claude evaluates candidate fit against job descriptions with a 0–100 match score, hire recommendation, and structured breakdown; enriched with live LinkedIn, GitHub, and personal website content fetched at analysis time
+- **Autonomous Job Discovery** — multi-step agentic pipeline: Claude generates target companies by ATS platform, scrapes Greenhouse and Lever JSON APIs concurrently, then batch-assesses all postings against the candidate profile in a single LLM pass
+- **Subscription & Billing** — Stripe Checkout integration with three payment tiers (pay-per-analysis, bulk pack, 24-hour unlimited); atomic Firestore quota transactions prevent double-spend under concurrent load
+- **PII-Safe Data Model** — emails and names stored exclusively as SHA-256 hashes in Firestore; raw PII never persists to the database
+- **Admin Intelligence Dashboard** — real-time aggregated analytics across all users, analysis history, and application pipeline with role-based access control
+
+**Architecture Highlights**
+- Stateless Go (Chi) REST API on Cloud Run; zero cold-start overhead at scale-to-zero pricing
+- Firebase Auth JWT verification middleware; all Firestore writes restricted to the backend service account — client writes blocked at the security rules layer
+- Fully containerized local development stack with Firebase Auth + Firestore emulators via Docker Compose; production mirrors the same topology on GCP
+- One-command deployment pipeline: automated GCP provisioning, IAM, Secret Manager, Docker build/push, and Cloud Run deploy via custom shell scripts
+
+*Technologies: Go · Chi · Next.js 15 · TypeScript · Tailwind CSS · Anthropic Claude API (Sonnet 4.6, Haiku 4.5) · Firebase Auth · Cloud Firestore · Google Cloud Run · Artifact Registry · Secret Manager · Stripe Checkout · Docker · GCP IAM · Firebase Emulator Suite*
+
+#### Independent Developer
+
+**[Gist Reader](https://apps.apple.com/ca/app/gist-reader/id6761196988) — iOS App Store** *(Mar 2026 – Present)*
+
+Designed, built, and shipped a production native iOS app as a solo independent project — covering product design, architecture, AI integration, monetization, and App Store submission end-to-end.
+
+**What It Does**
+
+A book and movie companion app that delivers AI-powered multi-section summaries, real-time multi-source search, text-to-speech playback, and a personal library — built on a polished liquid glass SwiftUI design.
+
+**Key Technical Highlights**
+- **AI Summary Pipeline** — Streams summaries from OpenAI GPT-4o and Anthropic Claude via SSE; a three-tier cache (in-memory → SwiftData → Firestore cloud cache) ensures any summary generated by one user is served instantly to all future users at zero API cost
+- **Cloud Cache** — Firestore-backed shared cache keyed by SHA-256 of title + author; Firebase App Check (App Attest in Release) blocks unauthorized access at the database layer
+- **Monetization** — Rewarded video ad model via Google AdMob with intelligent back-to-back preloading for seamless 3-ad sequences before AI generation
+- **Security** — All API keys stored exclusively in the iOS Keychain; no plaintext secrets in source, plist, or UserDefaults
+- **Multi-Source Search** — Concurrent async fan-out across Google Books, Open Library, and OMDb with real-time streaming results and deduplication
+- **MVVM Architecture** — Single `@MainActor` AppViewModel injected at scene root; SwiftData persistence for library entries and cached summaries
+
+*Technologies: Swift · SwiftUI · SwiftData · MVVM · Firebase Auth · Cloud Firestore · Firebase App Check · Google AdMob · OpenAI API · Anthropic Claude API · SSE Streaming · iOS Keychain*
+
+---
+
 ### CIBC — Commercial Banking & Payments | *Solution Architect (via Aletha)*
 **June 2025 – Present**
 
-**Project 1 — CMO Mobile Migration & Modernization**
-- Lead solution architect migrating a legacy mobile and web application from CGI infrastructure to CIBC Azure, including new features and functionality.
-- Supporting 3,000+ users at go-live.
-
-**Project 2 — Safer Payment Canada Migration (IBM to CIBC Azure)**
+**Project 1 — Safer Payment Canada Migration (IBM to CIBC Azure)**
 - Drove design, POCs, application launch, and cost reduction strategies for a multi-million-dollar infrastructure migration.
 - Planned and executed a migration roadmap targeting millions of dollars in annual cost savings.
 - Engineered network configuration across multiple VNets with NSG rules for secure segmentation.
 - Configured F5 load balancers for local high availability and global disaster recovery.
 - Implemented APIM, RBAC, MSI, and SSL configurations for authentication, authorization, and security.
+- Millions of dollars savings for the client with the new infra archetecture and support cost
 
-**Project 3 — Pinot US Payment Fraud Solution**
+**Project 2 — FAE Pinot US Payment Fraud Solution**
 - Lead architect building infrastructure to support fraud detection across multiple payment touchpoints.
 - Architected highly available distributed systems across Azure and hybrid infrastructures using Kafka and Azure OpenShift.
 - Embedded observability through Splunk, Dynatrace, and Azure Monitor for proactive anomaly detection.
 - Delivered cost-effective, scalable solutions balancing regional failover with optimized service sizing.
-
-**Project 4 — Fraud Analysis Engine**
-- Lead architect and solution designer for a vendor-based payment hold/review decision system.
 - Full tech lead for end-to-end delivery.
+- Saved a million dollar with a scalable solution for the client to host several future data sources
 - Azure-based solution with internal and external integrations via SOAP and REST APIs, VNet peering, VPN Tunnel, SSL, and SPNs.
 - Integrations with SMTP, ServiceNow, CyberArk, Splunk, FeedHub, and Azure Monitor.
+
+**Project 3 — CMO Mobile Migration & Modernization**
+- Lead solution architect migrating a legacy mobile and web application from CGI infrastructure to CIBC Azure, including new features and functionality.
+- Supporting 3,000+ users at go-live.
 
 *Technologies: Azure OpenShift, Spring Boot, React, APIM, PostgreSQL, Kafka, Oracle, RSA, VPN Tunnel, Akamai, F5, Azure Blob, AKV, HashiCorp Vault, Dynatrace, Splunk, GitHub Actions, CyberArk, Google Firebase (FCM), VMs, SQL MI*
 
