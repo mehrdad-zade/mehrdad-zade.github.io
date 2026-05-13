@@ -259,9 +259,9 @@
       <!-- Maester.Work -->
       <div class="exp-card reveal">
         <div class="exp-meta">
-          <span class="exp-co"><a href="https://maester.work" target="_blank" rel="noopener noreferrer" class="inline-link">Maester.Work</a></span>
-          <span class="exp-role">Founder &amp; Full-Stack Engineer</span>
-          <span class="exp-proj">AI-Powered Hiring Intelligence Platform</span>
+          <span class="exp-co">Founder</span>
+          <span class="exp-role">Full-Stack Engineer</span>
+          <span class="exp-proj"><a href="https://maester.work" target="_blank" rel="noopener noreferrer" class="inline-link">Maester.Work — AI Hiring Intelligence Platform</a></span>
         </div>
         <div class="exp-tags">
           <span class="tag t-backend">Go (Chi)</span><span class="tag t-frontend">Next.js 15</span>
@@ -309,6 +309,33 @@
         <div class="proj-actions" style="margin-top:0.75rem;">
           <a href="https://apps.apple.com/ca/app/gist-reader/id6761196988" target="_blank" rel="noopener noreferrer" class="proj-link">🍎 App Store →</a>
         </div>
+      </div>
+
+      <!-- Independent Developer — alo -->
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-co">Independent Developer</span>
+          <span class="exp-role">iOS App Developer</span>
+          <span class="exp-proj">alo — Real-Time Chat, Voice &amp; Video Calling</span>
+        </div>
+        <div class="exp-tags">
+          <span class="tag t-mobile">Swift</span><span class="tag t-mobile">SwiftUI</span>
+          <span class="tag t-mobile">MVVM (Observation)</span><span class="tag t-mobile">AVFoundation</span>
+          <span class="tag t-mobile">CallKit</span><span class="tag t-mobile">PushKit</span>
+          <span class="tag t-cloud">LiveKit (WebRTC)</span><span class="tag t-cloud">APNs / VoIP Push</span>
+          <span class="tag t-cloud">Firebase Cloud Functions</span><span class="tag t-cloud">FCM</span>
+          <span class="tag t-sec">Sign in with Apple</span><span class="tag t-sec">Firebase Auth</span>
+          <span class="tag t-db">Cloud Firestore</span><span class="tag t-db">Firebase Storage</span>
+          <span class="tag t-sec">iOS Keychain</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Designed, built, and shipped a production-quality native iOS communication app as a solo independent project — covering identity, real-time messaging, WebRTC calling, push infrastructure, and Firebase backend end-to-end.</li>
+          <li>Sign in with Apple as sole identity: OAuth credential exchange with Firebase Auth; Apple-provided email cached to iOS Keychain (Apple only releases it on first sign-in) and upserted to Firestore on every session.</li>
+          <li>Audio/video calling on LiveKit WebRTC rooms; Firestore documents drive the ringing → active → ended state machine, eliminating the need for a dedicated signaling server.</li>
+          <li>VoIP push with CallKit: PushKit wakes the app from a killed state; <code>reportNewIncomingCall</code> invoked synchronously inside the push handler to satisfy Apple's strict CallKit contract; native lock-screen call UI for incoming rings.</li>
+          <li>Firebase Cloud Functions mint LiveKit JWTs on demand, keeping the API secret out of the app bundle; APNs VoIP dispatch handled through the same functions layer.</li>
+          <li>Real-time messaging with Firestore listeners; offline persistence queues messages locally and delivers them on reconnect with no duplicate risk; media pipeline (images, voice memos, files, avatars) on Firebase Storage behind a unified permission service.</li>
+        </ul>
       </div>
 
       <!-- CIBC Commercial Banking -->
@@ -439,6 +466,7 @@
         <div class="exp-meta">
           <span class="exp-co">Autosavvy</span>
           <span class="exp-role">Application Solution Architect</span>
+          <span class="exp-proj">Workflow &amp; Schema Optimization</span>
         </div>
         <div class="exp-tags">
           <span class="tag t-cloud">Azure Data Factory</span>
@@ -645,6 +673,7 @@
         <div class="exp-meta">
           <span class="exp-co">TATA Consultancy Services</span>
           <span class="exp-role">Tech. Lead</span>
+          <span class="exp-proj">CIBC Personal Banking Product &amp; Technology</span>
         </div>
         <div class="exp-tags">
           <span class="tag t-backend">Java</span><span class="tag t-backend">Spring Boot</span>
@@ -684,6 +713,7 @@
         <div class="exp-meta">
           <span class="exp-co">TATA Consultancy Services</span>
           <span class="exp-role">Software Engineer</span>
+          <span class="exp-proj">Mortgage &amp; Online Banking Engineering</span>
         </div>
         <ul class="exp-bullets">
           <li>Solution analyst for an online banking application</li>
@@ -886,6 +916,7 @@
         </div>
         <ul class="proj-list">
           <li><strong><a href="https://apps.apple.com/ca/app/gist-reader/id6761196988" target="_blank" rel="noopener noreferrer" class="inline-link">Gist Reader</a></strong> — iOS app published on the App Store</li>
+          <li><strong>alo</strong> — Real-time chat, voice &amp; video calling for iOS (SwiftUI · LiveKit · CallKit · PushKit · Firebase)</li>
           <li>Stock price tracker with AI suggestions</li>
           <li>Weather forecasting app</li>
           <li>Bitcoin price monitor</li>

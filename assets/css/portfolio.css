@@ -552,9 +552,10 @@ a { color: var(--cyan); text-decoration: none; }
 .exp-proj {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.73rem;
-  color: var(--text-3);
+  color: var(--cyan);
   letter-spacing: 0.03em;
 }
+.exp-proj .inline-link { color: inherit; }
 
 .exp-tags { display: flex; flex-wrap: wrap; gap: 0.33rem; margin-bottom: 0.9rem; }
 

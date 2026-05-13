@@ -22,12 +22,13 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 | **Leadership & Delivery** | Onsite/offshore team management (20+ engineers) · Hiring & technical interviewing · Developer mentoring & onboarding · Delivery planning & capacity management · SDLC ownership · ITIL release management |
 | **Solution Architecture** | Distributed systems design · High availability & disaster recovery · Microservices & API design · Event-driven architecture · Enterprise integration (REST / SOAP / MQ) · Fraud detection & FinTech systems |
 | **AI & Data Engineering** | RAG / LLM integration · Prompt engineering · Agentic workflows · ML pipelines · Databricks · Azure OpenAI · Form Recognizer |
-| **Languages & Frameworks** | Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS |
+| **Languages & Frameworks** | Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, AVFoundation, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS |
 | **LLMs & Agentic AI** | Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock |
-| **Cloud & Infrastructure** | Azure, AWS, GCP · Azure OpenShift · Kafka · Docker · Kubernetes · Azure Bicep · Ansible |
+| **Cloud & Infrastructure** | Azure, AWS, GCP · Azure OpenShift · Kafka · Docker · Kubernetes · Azure Bicep · Ansible · Firebase Cloud Functions |
+| **Real-Time & Communications** | WebRTC · LiveKit · CallKit · PushKit · APNs / VoIP Push · Firebase Cloud Messaging (FCM) · Firestore real-time listeners |
 | **DevOps & CI/CD** | GitHub Actions, Azure DevOps Pipelines, Jenkins, Makefile |
-| **Security** | OAuth 2.0, JWT, API Keys, SSL Certificates, Sessions, Cookies, Apigee, API Proxies, RBAC, Azure Entra ID |
-| **Databases** | PostgreSQL, MS SQL / SQL MI, Oracle, MySQL, MongoDB, Firebase |
+| **Security** | OAuth 2.0, JWT, API Keys, SSL Certificates, Sessions, Cookies, Apigee, API Proxies, RBAC, Azure Entra ID, Sign in with Apple, iOS Keychain |
+| **Databases** | PostgreSQL, MS SQL / SQL MI, Oracle, MySQL, MongoDB, Firebase / Firestore |
 | **Observability** | Splunk, Dynatrace, Azure Monitor, Application Insights, Elasticsearch / ELK |
 | **Blockchain** | Ethereum, Truffle Framework, Solidity (Smart Contracts), Ganache |
 
@@ -59,16 +60,9 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 
 Designed, built, and deployed a production-grade **AI-powered hiring intelligence platform** as a solo full-stack project — covering product design, architecture, backend, frontend, infrastructure, and billing in a single continuous build.
 
-**Platform Overview**
+**Platform Overview:** A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptions for instant AI-scored fit analysis; job seekers build profiles and let the AI autonomously discover, score, and track matched opportunities across company career pages.
 
-A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptions for instant AI-scored fit analysis; job seekers build profiles and let the AI autonomously discover, score, and track matched opportunities across company career pages.
-
-**Key Capabilities**
-- **AI Resume Analysis** — Claude evaluates candidate fit against job descriptions with a 0–100 match score, hire recommendation, and structured breakdown; enriched with live LinkedIn, GitHub, and personal website content fetched at analysis time
-- **Autonomous Job Discovery** — multi-step agentic pipeline: Claude generates target companies by ATS platform, scrapes Greenhouse and Lever JSON APIs concurrently, then batch-assesses all postings against the candidate profile in a single LLM pass
-- **Subscription & Billing** — Stripe Checkout integration with three payment tiers (pay-per-analysis, bulk pack, 24-hour unlimited); atomic Firestore quota transactions prevent double-spend under concurrent load
-- **PII-Safe Data Model** — emails and names stored exclusively as SHA-256 hashes in Firestore; raw PII never persists to the database
-- **Admin Intelligence Dashboard** — real-time aggregated analytics across all users, analysis history, and application pipeline with role-based access control
+**Key Capabilities:** AI Resume Analysis, Autonomous Job Discovery, Subscription & Billing, PII-Safe Data Model, Admin Intelligence Dashboard
 
 **Architecture Highlights**
 - Stateless Go (Chi) REST API on Cloud Run; zero cold-start overhead at scale-to-zero pricing
@@ -80,23 +74,25 @@ A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptio
 
 #### Independent Developer
 
-**[Gist Reader](https://apps.apple.com/ca/app/gist-reader/id6761196988) — iOS App Store** *(Mar 2026 – Present)*
+i. **[Gist Reader](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — iOS App Store** *(Mar 2026 – Present)*
 
 Designed, built, and shipped a production native iOS app as a solo independent project — covering product design, architecture, AI integration, monetization, and App Store submission end-to-end.
 
-**What It Does**
+**What It Does:** A book and movie companion app that delivers AI-powered multi-section summaries, real-time multi-source search, text-to-speech playback, and a personal library — built on a polished liquid glass SwiftUI design.
 
-A book and movie companion app that delivers AI-powered multi-section summaries, real-time multi-source search, text-to-speech playback, and a personal library — built on a polished liquid glass SwiftUI design.
-
-**Key Technical Highlights**
-- **AI Summary Pipeline** — Streams summaries from OpenAI GPT-4o and Anthropic Claude via SSE; a three-tier cache (in-memory → SwiftData → Firestore cloud cache) ensures any summary generated by one user is served instantly to all future users at zero API cost
-- **Cloud Cache** — Firestore-backed shared cache keyed by SHA-256 of title + author; Firebase App Check (App Attest in Release) blocks unauthorized access at the database layer
-- **Monetization** — Rewarded video ad model via Google AdMob with intelligent back-to-back preloading for seamless 3-ad sequences before AI generation
-- **Security** — All API keys stored exclusively in the iOS Keychain; no plaintext secrets in source, plist, or UserDefaults
-- **Multi-Source Search** — Concurrent async fan-out across Google Books, Open Library, and OMDb with real-time streaming results and deduplication
-- **MVVM Architecture** — Single `@MainActor` AppViewModel injected at scene root; SwiftData persistence for library entries and cached summaries
+**Key Technical Highlights:** AI Summary Pipeline, Cloud Cache, Monetization, Security, Multi-Source Search, MVVM Architecture
 
 *Technologies: Swift · SwiftUI · SwiftData · MVVM · Firebase Auth · Cloud Firestore · Firebase App Check · Google AdMob · OpenAI API · Anthropic Claude API · SSE Streaming · iOS Keychain*
+
+ii. **[ALO](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — Real-Time Chat, Voice & Video Calling for iOS** *(May 2026 – Present)*
+
+Designed, built, and shipped a production-quality native iOS communication app as a solo independent project — covering identity, real-time messaging, WebRTC calling, push infrastructure, and Firebase backend end-to-end.
+
+**What It Does:** A 1:1 and group messaging app with audio/video calling, real-time text and media exchange, lock-screen call delivery, and a polished liquid-glass SwiftUI interface. Users are identified solely by their Apple ID email — no usernames or passwords.
+
+**Key Technical Highlights:** Sign in with Apple as Sole Identity, Real-Time Messaging, Audio/Video Calling on LiveKit, VoIP Push with CallKit, Server-Side Token Generation, Media Pipeline, MVVM
+
+*Technologies: Swift · SwiftUI · MVVM (Observation) · Sign in with Apple · Firebase Auth · Cloud Firestore · Firebase Storage · Firebase Cloud Functions · FCM · LiveKit (WebRTC) · CallKit · PushKit · APNs VoIP · AVFoundation · iOS Keychain*
 
 ---
 
@@ -208,8 +204,6 @@ A book and movie companion app that delivers AI-powered multi-section summaries,
 - Developed a Python feature extraction tool to identify regions of interest (ROIs), working directly with radiologists to validate clinical relevance.
 
 ---
-
-<div style="page-break-before: always;"></div>
 
 ## Certificates
 
