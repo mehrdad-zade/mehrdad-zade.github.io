@@ -1,4 +1,21 @@
-# Mehrdad Alemzadeh
+<style>
+@media print {
+  /* Set standard margins to make room for headers and footers */
+  @page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    
+    /* Dynamically inject the page number at the bottom center of every page */
+    @bottom-center {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+      color: #555555;
+    }
+  }
+}
+</style>
+### Mehrdad Alemzadeh
 
 **Email:** Zade.Mehrdad@gmail.com  
 **Location:** Toronto, Ontario | Canadian Citizen  
@@ -6,24 +23,45 @@
 
 ---
 
-## Summary
-
-Senior Application Solution Architect and high-performing Full Stack Software Engineer with a proven record of leading and delivering impactful solutions for mission-critical initiatives across multiple teams and departments. Skilled in cloud services and end-to-end SDLC ownership, with expertise in leveraging AI-assisted development to accelerate software delivery. Experienced in setting technical direction, mentoring engineers, and driving cross-functional collaboration at scale. Expert problem-solving skills and consistent ability to deliver cost-effective, high-quality outcomes.
-
-Currently serving as a multi-faceted lead at Aletha Corp., navigating complex client engagements as a Solution Architect and Tech Lead. Complementing corporate expertise with an entrepreneurial background as a founder of multiple live software solutions, demonstrating a unique blend of technical rigor and product vision.
+### Summary
+<p style="text-align: justify;">
+Senior solution architect and high-performing full stack software engineer with a proven record of leading and delivering impactful solutions for mission-critical initiatives across multiple teams and departments. Skilled in cloud services and end-to-end SDLC ownership, with expertise in leveraging AI services to add meaningful values. Experienced in setting technical direction, mentoring engineers, and driving cross-functional collaboration at scale. Expert problem-solving skills and consistent ability to deliver cost-effective, high-quality outcomes.
+</p>
+<p style="text-align: justify;">
+Currently serving as a multi-faceted lead at Aletha Corp., navigating complex client engagements as a solution architect and tech lead. I have been involved in departments such as Wealth, Mortgage, Payments, Commercial banking, Fraud, HR, Cloud, DevOps and AI-Innovations. Complementing corporate expertise with an entrepreneurial background as a founder of multiple live software solutions, demonstrating a unique blend of technical rigor and product vision. I have over a decade of experience with AI from building, training and testing models to delivering dozens of production grade solutions.
+</p>
 
 ---
 
-## Skills & Core Competencies
+### Honors
 
+- **Among Top 3 Enterprise AI Solutions — CIBC's Dragon's Den Innovation Challenge** *(December 2025)*
+- **Among Top 20 Developers at BNS (with only 6 month worth of contributions)** — BlueOptima *(June 2023)*
+- **Ranked #1 in T-Factor at TCS for 3 years** *(2018–2021)*
+- **4-Year Academic Scholarship** — McMaster University
+
+---
+
+### Education
+
+- **Doctor of Philosophy (PhD), Computer Science**
+     - *McMaster University* *([Completed Thesis 2016](https://macsphere.mcmaster.ca/handle/11375/19286))*  
+     - *Machine Learning Models for Medical Image Analysis*
+- **Master of Science (MSC), Information Systems**  
+	 - *Statistical Feature Extraction and Neural Network Training*
+- **Bachelor of Science (BSc), Software Engineering**
+	 - *Image Processing*
+
+
+### Skills
 | Category | Details |
 |:--|:--|
 | **Strategy & Stakeholders** | Executive-level roadmap planning · Multi-million-dollar migration strategy · Cross-functional stakeholder alignment · Cost reduction & optimization · Vendor engagement & architecture governance |
-| **Leadership & Delivery** | Onsite/offshore team management (20+ engineers) · Hiring & technical interviewing · Developer mentoring & onboarding · Delivery planning & capacity management · SDLC ownership · ITIL release management |
-| **Solution Architecture** | Distributed systems design · High availability & disaster recovery · Microservices & API design · Event-driven architecture · Enterprise integration (REST / SOAP / MQ) · Fraud detection & FinTech systems |
-| **AI & Data Engineering** | RAG / LLM integration · Prompt engineering · Agentic workflows · ML pipelines · Databricks · Azure OpenAI · Form Recognizer |
+| **Leadership & Delivery** | Onsite/offshore team management · Hiring & technical interviewing · Developer mentoring & onboarding · Delivery planning & capacity management · SDLC ownership · ITIL release management |
+| **Solution Architecture** | Distributed systems design · High availability & disaster recovery · Scalability . Performance . Micro-services & API design · Event-driven architecture · Enterprise integration (REST / SOAP / MQ) · AI Services . Cloud Services . Authentication . Security & Privacy . Modernization . Cost Reduction . Monitoring & log management . Data |
+| **AI & Data Engineering** | RAG / LLM integration · Prompt engineering · Agentic workflows · ML pipelines · Databricks · Azure OpenAI · Form Recognizer . Token aware solutions . Risk and Security|
 | **Languages & Frameworks** | Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, AVFoundation, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS |
-| **LLMs & Agentic AI** | Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock |
+| **LLMs & Agentic AI** | Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock, Selenium, Playwright |
 | **Cloud & Infrastructure** | Azure, AWS, GCP · Azure OpenShift · Kafka · Docker · Kubernetes · Azure Bicep · Ansible · Firebase Cloud Functions |
 | **Real-Time & Communications** | WebRTC · LiveKit · CallKit · PushKit · APNs / VoIP Push · Firebase Cloud Messaging (FCM) · Firestore real-time listeners |
 | **DevOps & CI/CD** | GitHub Actions, Azure DevOps Pipelines, Jenkins, Makefile |
@@ -32,69 +70,10 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 | **Observability** | Splunk, Dynatrace, Azure Monitor, Application Insights, Elasticsearch / ELK |
 | **Blockchain** | Ethereum, Truffle Framework, Solidity (Smart Contracts), Ganache |
 
----
-
-## Honors
-
-- **Top 3 Enterprise AI Solutions — CIBC Dragon's Den Innovation Challenge** *(December 2025)*
-- **Top 20 Developers at BNS** — BlueOptima *(June 2023)*
-- **Ranked #1 in T-Factor at TCS** *(2018–2021)*
-- **4-Year Academic Scholarship** — McMaster University
-
----
-
-## Education
-
-**PhD, Computer Science** — McMaster University *([Completed Thesis 2016](https://macsphere.mcmaster.ca/handle/11375/19286))*  
-**M.Sc., Information Systems**  
-**B.Sc., Software Engineering**
-
----
 
 <div style="page-break-before: always;"></div>
 
-## Work Experience
-
-### [Maester.Work](https://maester.work) | *Founder & Full-Stack Engineer*
-**Apr 2026 – Present**
-
-Designed, built, and deployed a production-grade **AI-powered hiring intelligence platform** as a solo full-stack project — covering product design, architecture, backend, frontend, infrastructure, and billing in a single continuous build.
-
-**Platform Overview:** A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptions for instant AI-scored fit analysis; job seekers build profiles and let the AI autonomously discover, score, and track matched opportunities across company career pages.
-
-**Key Capabilities:** AI Resume Analysis, Autonomous Job Discovery, Subscription & Billing, PII-Safe Data Model, Admin Intelligence Dashboard
-
-**Architecture Highlights**
-- Stateless Go (Chi) REST API on Cloud Run; zero cold-start overhead at scale-to-zero pricing
-- Firebase Auth JWT verification middleware; all Firestore writes restricted to the backend service account — client writes blocked at the security rules layer
-- Fully containerized local development stack with Firebase Auth + Firestore emulators via Docker Compose; production mirrors the same topology on GCP
-- One-command deployment pipeline: automated GCP provisioning, IAM, Secret Manager, Docker build/push, and Cloud Run deploy via custom shell scripts
-
-*Technologies: Go · Chi · Next.js 15 · TypeScript · Tailwind CSS · Anthropic Claude API (Sonnet 4.6, Haiku 4.5) · Firebase Auth · Cloud Firestore · Google Cloud Run · Artifact Registry · Secret Manager · Stripe Checkout · Docker · GCP IAM · Firebase Emulator Suite*
-
-#### Independent Developer
-
-i. **[Gist Reader](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — iOS App Store** *(Mar 2026 – Present)*
-
-Designed, built, and shipped a production native iOS app as a solo independent project — covering product design, architecture, AI integration, monetization, and App Store submission end-to-end.
-
-**What It Does:** A book and movie companion app that delivers AI-powered multi-section summaries, real-time multi-source search, text-to-speech playback, and a personal library — built on a polished liquid glass SwiftUI design.
-
-**Key Technical Highlights:** AI Summary Pipeline, Cloud Cache, Monetization, Security, Multi-Source Search, MVVM Architecture
-
-*Technologies: Swift · SwiftUI · SwiftData · MVVM · Firebase Auth · Cloud Firestore · Firebase App Check · Google AdMob · OpenAI API · Anthropic Claude API · SSE Streaming · iOS Keychain*
-
-ii. **[ALO](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — Real-Time Chat, Voice & Video Calling for iOS** *(May 2026 – Present)*
-
-Designed, built, and shipped a production-quality native iOS communication app as a solo independent project — covering identity, real-time messaging, WebRTC calling, push infrastructure, and Firebase backend end-to-end.
-
-**What It Does:** A 1:1 and group messaging app with audio/video calling, real-time text and media exchange, lock-screen call delivery, and a polished liquid-glass SwiftUI interface. Users are identified solely by their Apple ID email — no usernames or passwords.
-
-**Key Technical Highlights:** Sign in with Apple as Sole Identity, Real-Time Messaging, Audio/Video Calling on LiveKit, VoIP Push with CallKit, Server-Side Token Generation, Media Pipeline, MVVM
-
-*Technologies: Swift · SwiftUI · MVVM (Observation) · Sign in with Apple · Firebase Auth · Cloud Firestore · Firebase Storage · Firebase Cloud Functions · FCM · LiveKit (WebRTC) · CallKit · PushKit · APNs VoIP · AVFoundation · iOS Keychain*
-
----
+### Work Experience
 
 ### CIBC — Commercial Banking & Payments | *Solution Architect (via Aletha)*
 **June 2025 – Present**
@@ -120,6 +99,11 @@ Designed, built, and shipped a production-quality native iOS communication app a
 **Project 3 — CMO Mobile Migration & Modernization**
 - Lead solution architect migrating a legacy mobile and web application from CGI infrastructure to CIBC Azure, including new features and functionality.
 - Supporting 3,000+ users at go-live.
+
+**Project 4 — Other involvements**
+- Due to successful delivery of Safer Payment project I got involved in a second vesion of this app through an independant infra on Azure as a tech leand and solution architect to further reduce cost on the client by introducing similar infra cost optimizations from the first project
+- Similarly, I got engaged in another FAE project for similar purposes
+- These project create over a dozen sub-projects such as SPUS-Pinot, SPC-EPE, SPC-Edge, and etc that I played a major role as a solution architect and hands-on delivery lead
 
 *Technologies: Azure OpenShift, Spring Boot, React, APIM, PostgreSQL, Kafka, Oracle, RSA, VPN Tunnel, Akamai, F5, Azure Blob, AKV, HashiCorp Vault, Dynatrace, Splunk, GitHub Actions, CyberArk, Google Firebase (FCM), VMs, SQL MI*
 
@@ -205,7 +189,43 @@ Designed, built, and shipped a production-quality native iOS communication app a
 
 ---
 
-## Certificates
+### Side Projects
+
+i. **[Maester.Work](https://maester.work) | **Apr 2026 – Present**
+
+Designed, built, and deployed a production-grade **AI-powered hiring intelligence platform** as a solo full-stack project — covering product design, architecture, backend, frontend, infrastructure, and billing in a single continuous build.
+
+**Platform Overview:** A dual-sided SaaS marketplace: hiring managers upload resumes and job descriptions for instant AI-scored fit analysis; job seekers build profiles and let the AI autonomously discover, score, and track matched opportunities across company career pages.
+
+**Architecture Highlights**
+- Stateless Go (Chi) REST API on Cloud Run; zero cold-start overhead at scale-to-zero pricing
+- Firebase Auth JWT verification middleware; all Firestore writes restricted to the backend service account — client writes blocked at the security rules layer
+- Fully containerized local development stack with Firebase Auth + Firestore emulators via Docker Compose; production mirrors the same topology on GCP
+- One-command deployment pipeline: automated GCP provisioning, IAM, Secret Manager, Docker build/push, and Cloud Run deploy via custom shell scripts
+
+*Technologies: Go · Chi · Next.js 15 · TypeScript · Tailwind CSS · Anthropic Claude API (Sonnet 4.6, Haiku 4.5) · Firebase Auth · Cloud Firestore · Google Cloud Run · Artifact Registry · Secret Manager · Stripe Checkout · Docker · GCP IAM · Firebase Emulator Suite*
+
+
+ii. **[Gist Reader](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — iOS App Store** *(Mar 2026 – Present)*
+
+Designed, built, and shipped a production native iOS app as a solo independent project — covering product design, architecture, AI integration, monetization, and App Store submission end-to-end.
+
+**What It Does:** A book and movie companion app that delivers AI-powered multi-section summaries, real-time multi-source search, text-to-speech playback, and a personal library — built on a polished liquid glass SwiftUI design.
+
+*Technologies: Swift · SwiftUI · SwiftData · MVVM · Firebase Auth · Cloud Firestore · Firebase App Check · Google AdMob · OpenAI API · Anthropic Claude API · SSE Streaming · iOS Keychain*
+
+iii. **[ALO](https://apps.apple.com/us/developer/mehrdad-alemzadeh/id1888227021) — Real-Time Chat, Voice & Video Calling for iOS** *(May 2026 – Present)*
+
+Designed, built, and shipped a production-quality native iOS communication app as a solo independent project — covering identity, real-time messaging, WebRTC calling, push infrastructure, and Firebase backend end-to-end.
+
+**What It Does:** A 1:1 and group messaging app with audio/video calling, real-time text and media exchange, lock-screen call delivery, and a polished liquid-glass SwiftUI interface. Users are identified solely by their Apple ID email — no usernames or passwords.
+
+*Technologies: Swift · SwiftUI · MVVM (Observation) · Sign in with Apple · Firebase Auth · Cloud Firestore · Firebase Storage · Firebase Cloud Functions · FCM · LiveKit (WebRTC) · CallKit · PushKit · APNs VoIP · AVFoundation · iOS Keychain*
+
+
+---
+
+### Certificates
 
 **Cloud & DevOps:** Microsoft Azure AZ-900 · Cloud Architecture · DevOps Foundations · Six Sigma Foundations · Salesforce Integration (SOAP API) · Google Cloud Platform Fundamentals
 
@@ -217,9 +237,9 @@ Designed, built, and shipped a production-quality native iOS communication app a
 
 **Big Data & Analytics:** The Ultimate Hands-On Hadoop · Tableau and Crystal Reports *(also referenced in Experience)*
 
----
 
-## Open Source Contributions
+
+### Open Source Contributions
 
 **AI-Powered Solutions:** x-university (AI auto-generated courses for different age groups) · Agentic-AI (frontend developer integrated with Microsoft Teams) · PortfolioGPT (stock market analysis with LSTM models) · Multi-index ChatGPT solution with privacy management · Book Summarizer Chrome extension · Twitter & Reddit sentiment analysis tools · Azure video-to-text processing pipeline
 
