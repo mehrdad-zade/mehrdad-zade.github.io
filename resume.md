@@ -1,35 +1,16 @@
-<style>
-@media print {
-  /* Set standard margins to make room for headers and footers */
-  @page {
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    
-    /* Dynamically inject the page number at the bottom center of every page */
-    @bottom-center {
-      content: "Page " counter(page) " of " counter(pages);
-      font-family: Arial, sans-serif;
-      font-size: 10pt;
-      color: #555555;
-    }
-  }
-}
-</style>
 ### Mehrdad Alemzadeh
 
 **Email:** Zade.Mehrdad@gmail.com  
 **Location:** Toronto, Ontario | Canadian Citizen  
-**Links:** [LinkedIn](https://www.linkedin.com/in/zade) | [GitHub](https://github.com/mehrdad-zade) | [Website](https://mehrdad-zade.github.io/)
+**Links:** linkedin.com/in/zade | github.com/mehrdad-zade | mehrdad-zade.github.io
 
 ---
 
 ### Summary
-<p style="text-align: justify;">
+
 Senior solution architect and high-performing full stack software engineer with a proven record of leading and delivering impactful solutions for mission-critical initiatives across multiple teams and departments. Skilled in cloud services and end-to-end SDLC ownership, with expertise in leveraging AI services to add meaningful values. Experienced in setting technical direction, mentoring engineers, and driving cross-functional collaboration at scale. Expert problem-solving skills and consistent ability to deliver cost-effective, high-quality outcomes.
-</p>
-<p style="text-align: justify;">
+
 Currently serving as a multi-faceted lead at Aletha Corp., navigating complex client engagements as a solution architect and tech lead. I have been involved in departments such as Wealth, Mortgage, Payments, Commercial banking, Fraud, HR, Cloud, DevOps and AI-Innovations. Complementing corporate expertise with an entrepreneurial background as a founder of multiple live software solutions, demonstrating a unique blend of technical rigor and product vision. I have over a decade of experience with AI from building, training and testing models to delivering dozens of production grade solutions.
-</p>
 
 ---
 
@@ -45,30 +26,42 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 ### Education
 
 - **Doctor of Philosophy (PhD), Computer Science**
-     - *McMaster University* *([Completed Thesis 2016](https://macsphere.mcmaster.ca/handle/11375/19286))*  
-     - *Machine Learning Models for Medical Image Analysis*
-- **Master of Science (MSC), Information Systems**  
-	 - *Statistical Feature Extraction and Neural Network Training*
+  - *McMaster University* *([Completed Thesis 2016](https://macsphere.mcmaster.ca/handle/11375/19286))*
+  - *Machine Learning Models for Medical Image Analysis*
+- **Master of Science (MSC), Information Systems**
+  - *Statistical Feature Extraction and Neural Network Training*
 - **Bachelor of Science (BSc), Software Engineering**
-	 - *Image Processing*
+  - *Image Processing*
 
+<div style="page-break-before: always;"></div>
 
 ### Skills
-| Category | Details |
-|:--|:--|
-| **Strategy & Stakeholders** | Executive-level roadmap planning · Multi-million-dollar migration strategy · Cross-functional stakeholder alignment · Cost reduction & optimization · Vendor engagement & architecture governance |
-| **Leadership & Delivery** | Onsite/offshore team management · Hiring & technical interviewing · Developer mentoring & onboarding · Delivery planning & capacity management · SDLC ownership · ITIL release management |
-| **Solution Architecture** | Distributed systems design · High availability & disaster recovery · Scalability . Performance . Micro-services & API design · Event-driven architecture · Enterprise integration (REST / SOAP / MQ) · AI Services . Cloud Services . Authentication . Security & Privacy . Modernization . Cost Reduction . Monitoring & log management . Data |
-| **AI & Data Engineering** | RAG / LLM integration · Prompt engineering · Agentic workflows · ML pipelines · Databricks · Azure OpenAI · Form Recognizer . Token aware solutions . Risk and Security|
-| **Languages & Frameworks** | Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, AVFoundation, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS |
-| **LLMs & Agentic AI** | Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock, Selenium, Playwright |
-| **Cloud & Infrastructure** | Azure, AWS, GCP · Azure OpenShift · Kafka · Docker · Kubernetes · Azure Bicep · Ansible · Firebase Cloud Functions |
-| **Real-Time & Communications** | WebRTC · LiveKit · CallKit · PushKit · APNs / VoIP Push · Firebase Cloud Messaging (FCM) · Firestore real-time listeners |
-| **DevOps & CI/CD** | GitHub Actions, Azure DevOps Pipelines, Jenkins, Makefile |
-| **Security** | OAuth 2.0, JWT, API Keys, SSL Certificates, Sessions, Cookies, Apigee, API Proxies, RBAC, Azure Entra ID, Sign in with Apple, iOS Keychain |
-| **Databases** | PostgreSQL, MS SQL / SQL MI, Oracle, MySQL, MongoDB, Firebase / Firestore |
-| **Observability** | Splunk, Dynatrace, Azure Monitor, Application Insights, Elasticsearch / ELK |
-| **Blockchain** | Ethereum, Truffle Framework, Solidity (Smart Contracts), Ganache |
+
+**Strategy & Stakeholders:** Executive-level roadmap planning, Multi-million-dollar migration strategy, Cross-functional stakeholder alignment, Cost reduction & optimization, Vendor engagement & architecture governance
+
+**Leadership & Delivery:** Onsite/offshore team management, Hiring & technical interviewing, Developer mentoring & onboarding, Delivery planning & capacity management, SDLC ownership, ITIL release management
+
+**Solution Architecture:** Distributed systems design, High availability & disaster recovery, Scalability, Performance, Micro-services & API design, Event-driven architecture, Enterprise integration (REST / SOAP / MQ), AI Services, Cloud Services, Authentication, Security & Privacy, Modernization, Cost Reduction, Monitoring & log management, Data
+
+**AI & Data Engineering:** RAG / LLM integration, Prompt engineering, Agentic workflows, ML pipelines, Databricks, Azure OpenAI, Form Recognizer, Token aware solutions, Risk and Security
+
+**Languages & Frameworks:** Go (Chi), Spring Boot, .NET, FastAPI / Django / Flask (Python), Express.js, Next.js, React, Angular, Swift / SwiftUI / SwiftData, AVFoundation, iOS, Android, JavaScript, TypeScript, Chrome Extensions, Tailwind CSS, Bootstrap, HTML, CSS
+
+**LLMs & Agentic AI:** Anthropic Claude, OpenAI ChatGPT, Grok, Meta Llama, DeepSeek, GitHub Copilot, Ollama, Eliza, Azure AI Foundry, AWS Bedrock, Selenium, Playwright
+
+**Cloud & Infrastructure:** Azure, AWS, GCP, Azure OpenShift, Kafka, Docker, Kubernetes, Azure Bicep, Ansible, Firebase Cloud Functions
+
+**Real-Time & Communications:** WebRTC, LiveKit, CallKit, PushKit, APNs / VoIP Push, Firebase Cloud Messaging (FCM), Firestore real-time listeners
+
+**DevOps & CI/CD:** GitHub Actions, Azure DevOps Pipelines, Jenkins, Makefile
+
+**Security:** OAuth 2.0, JWT, API Keys, SSL Certificates, Sessions, Cookies, Apigee, API Proxies, RBAC, Azure Entra ID, Sign in with Apple, iOS Keychain
+
+**Databases:** PostgreSQL, MS SQL / SQL MI, Oracle, MySQL, MongoDB, Firebase / Firestore
+
+**Observability:** Splunk, Dynatrace, Azure Monitor, Application Insights, Elasticsearch / ELK
+
+**Blockchain:** Ethereum, Truffle Framework, Solidity (Smart Contracts), Ganache
 
 
 <div style="page-break-before: always;"></div>
@@ -84,7 +77,7 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 - Engineered network configuration across multiple VNets with NSG rules for secure segmentation.
 - Configured F5 load balancers for local high availability and global disaster recovery.
 - Implemented APIM, RBAC, MSI, and SSL configurations for authentication, authorization, and security.
-- Millions of dollars savings for the client with the new infra archetecture and support cost
+- Millions of dollars savings for the client with the new infra architecture and support cost
 
 **Project 2 — FAE Pinot US Payment Fraud Solution**
 - Lead architect building infrastructure to support fraud detection across multiple payment touchpoints.
@@ -92,7 +85,7 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 - Embedded observability through Splunk, Dynatrace, and Azure Monitor for proactive anomaly detection.
 - Delivered cost-effective, scalable solutions balancing regional failover with optimized service sizing.
 - Full tech lead for end-to-end delivery.
-- Saved a million dollar with a scalable solution for the client to host several future data sources
+- Saved a million dollars with a scalable solution for the client to host several future data sources
 - Azure-based solution with internal and external integrations via SOAP and REST APIs, VNet peering, VPN Tunnel, SSL, and SPNs.
 - Integrations with SMTP, ServiceNow, CyberArk, Splunk, FeedHub, and Azure Monitor.
 
@@ -101,7 +94,7 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 - Supporting 3,000+ users at go-live.
 
 **Project 4 — Other involvements**
-- Due to successful delivery of Safer Payment project I got involved in a second vesion of this app through an independant infra on Azure as a tech leand and solution architect to further reduce cost on the client by introducing similar infra cost optimizations from the first project
+- Due to successful delivery of Safer Payment project I got involved in a second version of this app through an independent infra on Azure as a tech lead and solution architect to further reduce cost on the client by introducing similar infra cost optimizations from the first project
 - Similarly, I got engaged in another FAE project for similar purposes
 - These project create over a dozen sub-projects such as SPUS-Pinot, SPC-EPE, SPC-Edge, and etc that I played a major role as a solution architect and hands-on delivery lead
 
@@ -191,7 +184,7 @@ Currently serving as a multi-faceted lead at Aletha Corp., navigating complex cl
 
 ### Side Projects
 
-i. **[Maester.Work](https://maester.work) | **Apr 2026 – Present**
+i. [Maester.Work](https://maester.work) | **Apr 2026 – Present**
 
 Designed, built, and deployed a production-grade **AI-powered hiring intelligence platform** as a solo full-stack project — covering product design, architecture, backend, frontend, infrastructure, and billing in a single continuous build.
 
@@ -221,36 +214,3 @@ Designed, built, and shipped a production-quality native iOS communication app a
 **What It Does:** A 1:1 and group messaging app with audio/video calling, real-time text and media exchange, lock-screen call delivery, and a polished liquid-glass SwiftUI interface. Users are identified solely by their Apple ID email — no usernames or passwords.
 
 *Technologies: Swift · SwiftUI · MVVM (Observation) · Sign in with Apple · Firebase Auth · Cloud Firestore · Firebase Storage · Firebase Cloud Functions · FCM · LiveKit (WebRTC) · CallKit · PushKit · APNs VoIP · AVFoundation · iOS Keychain*
-
-
----
-
-### Certificates
-
-**Cloud & DevOps:** Microsoft Azure AZ-900 · Cloud Architecture · DevOps Foundations · Six Sigma Foundations · Salesforce Integration (SOAP API) · Google Cloud Platform Fundamentals
-
-**AI & Machine Learning:** Azure Machine Learning for Data Scientists · GitHub Copilot for Project Management · Generative AI for Leaders · Change Management for Generative AI · Neural Networks and Deep Learning *(deeplearning.ai)* · Improving Deep Neural Networks *(deeplearning.ai)* · Convolutional Neural Networks *(deeplearning.ai)* · Sequence Models *(deeplearning.ai)* · Machine Learning — Andrew Ng (Stanford) · Machine Learning A–Z: Python & R · Data Science and ML Bootcamp
-
-**Programming & Full-Stack:** Foundational C# with Microsoft · OOP in Java (University of Helsinki) · Python and Django Full Stack Web Developer · The Web Developer Bootcamp · React — The Complete Guide (Hooks, Router, Redux) · MERN Stack Front to Back · Full Stack: Angular and Java Spring Boot · E-Commerce App with .NET Core and Angular · Blockchain & Cryptocurrency Full Stack
-
-**Mobile:** iOS 12 & Swift Bootcamp · Android Oreo Developer
-
-**Big Data & Analytics:** The Ultimate Hands-On Hadoop · Tableau and Crystal Reports *(also referenced in Experience)*
-
-
-
-### Open Source Contributions
-
-**AI-Powered Solutions:** x-university (AI auto-generated courses for different age groups) · Agentic-AI (frontend developer integrated with Microsoft Teams) · PortfolioGPT (stock market analysis with LSTM models) · Multi-index ChatGPT solution with privacy management · Book Summarizer Chrome extension · Twitter & Reddit sentiment analysis tools · Azure video-to-text processing pipeline
-
-**Full-Stack Development:** Interview Agent · Project Effort Estimator · Telegram-based news aggregator · CRM ideathon · Azure custom cost and security dashboard
-
-**Enterprise Applications:** Flight Reservation System with check-in · Clinical Data Reporting Platform · eCommerce application · Document management system · Location tracking web application
-
-**Mobile Applications:** Stock price tracker with AI suggestions · Weather forecasting app · Bitcoin price monitor · Bluetooth device finder · Custom Chrome browser with ad-blocker *(Android & iOS)*
-
-**Automation & DevOps Tools:** macOS app arranger across virtual desktops/monitors/display positions · Windows custom hotkeys to mimic macOS keyboard shortcuts · Automated Yahoo Finance advertisement bot · Video download automation · macOS feature enablement shortcuts · Stock price web scraper · News summarization system
-
-**Blockchain Solutions:** Full-stack cryptocurrency application · Smart contract development (Solidity) · Blockchain integration with modern web frameworks · Decentralized application (DApp) development · Personal bill/tax tracker
-
-**Production Systems:** CIBC Commercial Banking modernization · Scotiabank Wealth Management platforms · Enterprise wire processing systems · Multi-million dollar migration projects · High-availability financial applications
